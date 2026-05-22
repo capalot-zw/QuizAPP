@@ -1,0 +1,117 @@
+body{
+  background: linear-gradient(
+    45deg,
+    rgba(147,250,153,0.493),
+    rgba(255,243,96,0.648)
+  );
+ 
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+
+  margin-top: 8vh;
+
+  font-size: 24px;
+  font-family: roboto;
+
+  border: solid;
+  border-radius: 20px;
+
+  padding: 20px;
+
+  color: black;
+  background-color: skyblue;
+
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.quizMain{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.question{
+  border: solid;
+  border-radius: 20px;
+
+  padding: 15px;
+
+  font-size: 28px;
+  line-height: 1.4;
+}
+
+.options{
+  width: 100%;
+
+  margin-top: 15px;
+  padding-top: 15px;
+
+  border-top: solid;
+
+  list-style: none;
+
+  font-size: 20px;
+}
+
+li{
+  display: grid;
+
+  grid-template-columns: 35px 1fr;
+
+  align-items: center;
+
+  margin-top: 15px;
+}
+
+input[type="radio"]{
+  transform: scale(1.2);
+}
+
+button{
+  width: 200px;
+  height: 55px;
+
+  font-size: 24px;
+
+  border-radius: 30px;
+
+  border: solid;
+
+  background: none;
+}
+
+.submit, .next{
+  width: 160px;
+  height: 50px;
+  font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+
+.buttonsGrid{
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.next{
+  margin-left: 20px;
+}
+
+@keyframes fadeIn{
+  from{
+    opacity: 0;
+    transform: translateY(100px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
